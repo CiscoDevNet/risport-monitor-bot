@@ -1,0 +1,22 @@
+{
+  "name": "botkit-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "botbuilder-adapter-webex": "^1.0.5",
+    "botbuilder-storage-mongodb": "^0.9.5",
+    "botbuilder-storage-redis": "^1.0.9",
+    "botkit": "^4.6.2",
+    "botkit-plugin-cms": "^1.0.3",
+    "dotenv": "^8.2.0",
+    "redis": "^2.8.0",
+    "uuid": "^3.4.0",
+    "xml2js": "^0.4.23"
+  }
+}
