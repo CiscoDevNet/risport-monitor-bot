@@ -20,9 +20,9 @@ Assuming you plan to us [ngrok](https://ngrok.com) to give your bot a publically
 1. Clone this repo:
 
     ```sh
-    git clone https://github.com/CiscoDevNet/botkit-template.git
+    git clone https://github.com/CiscoDevNet/risport-monitor-bot.git
 
-    cd botkit-template
+    cd risport-monitor-bot
     ```
 
 1. Install the Node.js dependencies:
@@ -44,8 +44,6 @@ Assuming you plan to us [ngrok](https://ngrok.com) to give your bot a publically
 1. Rename the `env.example` file to `.env`, then edit to configure the settings and info for your bot.
 
     >Note: you can also specify any of these settings via environment variables (which will take precedent over any settings configured in the `.env` file)...often preferred in production environments
-
-    To successfully run all of the sample features, you'll need to specify at minimum a `PUBLIC_URL` (ngrok HTTPS forwarding URL), and a `WEBEX_ACCESS_TOKEN` (Webex Teams bot access token)
 
     >If running on Glitch.me or Heroku (with [Dyno Metadata](https://devcenter.heroku.com/articles/dyno-metadata) enbaled), the `PUBLIC_URL` will be auto-configured
 
@@ -73,7 +71,7 @@ Assuming you plan to us [ngrok](https://ngrok.com) to give your bot a publically
 
 * Click [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/CiscoDevNet/botkit-template)
 
-* Open the `.env` file, then uncomment the `ACCESS_TOKEN` variable and paste in your bot's access token
+* Open the `.env` file, then uncomment the `WEBEX_ACCESS_TOKEN` variable and paste in your bot's access token
 
     **Optional**: enter appropirate info in the "Bot meta info..." section
 
@@ -87,7 +85,7 @@ You can verify the bot is up and running by browsing to its healthcheck URL (i.e
 
 * Create a new project pointing to this repo.
 
-* Open your app settings, view your config variables, and add an ACCESS_TOKEN variable with your bot's access token as value.
+* Open your app settings, view your config variables, and add an WEBEX_ACCESS_TOKEN variable with your bot's access token as value.
 
 * Unless your app is using [Dyno Metadata](https://devcenter.heroku.com/articles/dyno-metadata), you also need to add a PUBLIC_URL variable pointing to your app domain.
 
